@@ -57,6 +57,7 @@ h4 {
   margin-top: 0.6rem;
 }
 
+/* Scores */
 .scoreRound {
   font-size: 2rem;
   color: white;
@@ -72,14 +73,32 @@ h4 {
   text-align: center;
 }
 
+/* Dots */
+.dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(245, 96, 96);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot2 {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+}
+
 /* Middle elements */
 button {
   position: absolute;
-  left: 46%;
+  left: 44%;
   font-size: 1.3rem;
   z-index: 1;
   border: 0px;
   background-color: inherit;
+  color: rgb(139, 139, 139);
 }
 
 .newGame {
