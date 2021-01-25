@@ -103,6 +103,7 @@ button {
 
 .newGame {
   top: 10%;
+  margin-left: -20px;
 }
 
 .hold {
@@ -111,6 +112,7 @@ button {
 
 .rollDice {
   top: 66%;
+  margin-left: -20px;
 }
 
 .dice {
