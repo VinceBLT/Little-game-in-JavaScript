@@ -1,3 +1,36 @@
-body {
+/* Typo */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+h1,
+h2,
+h3 {
   font-family: 'Lato', sans-serif;
+}
+
+/* Split screen */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.players {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

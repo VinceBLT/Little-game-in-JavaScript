@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="ionic.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ionic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <title>Document</title>
   </head>
   <body>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="auto">
-          <div>PLAYER 1</div>
-        </ion-col>
-        <ion-col size="auto">
-          <div>PLAYER 2</div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <div class="split left">
+      <div class="players">
+        <h1>PLAYER 1</h1>
+      </div>
+    </div>
+    <div class="split right">
+      <div class="players">
+        <h1>PLAYER 2</h1>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
