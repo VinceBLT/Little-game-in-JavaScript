@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="ionic.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <title>Document</title>
   </head>
   <body>
@@ -30,12 +29,20 @@
       </div>
     </div>
     <div class="middle">
-      <h2 class="newGame">NEW GAME</h2>
+      <button class="newGame">
+        <ion-icon color="danger" name="add-circle-outline"></ion-icon>
+        NEW GAME
+      </button>
       <div class="dice"></div>
-      <h2 class="hold">HOLD</h2>
-      <h2 class="rollDice">ROLL DICE</h2>
+      <button class="rollDice">
+        <ion-icon name="reload-outline"></ion-icon> ROLL DICE
+      </button>
+      <button class="hold">
+        <ion-icon name="download-outline"></ion-icon> HOLD
+      </button>
     </div>
 
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

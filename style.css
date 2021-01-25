@@ -73,11 +73,13 @@ h4 {
 }
 
 /* Middle elements */
-h2 {
+button {
   position: absolute;
   left: 46%;
   font-size: 1.3rem;
   z-index: 1;
+  border: 0px;
+  background-color: inherit;
 }
 
 .newGame {
@@ -101,4 +103,8 @@ h2 {
   left: 45%;
   z-index: 1;
   box-shadow: 0px 0px 20px rgb(223, 223, 223);
+}
+
+ion-icon {
+  color: rgb(245, 96, 96);
 }
