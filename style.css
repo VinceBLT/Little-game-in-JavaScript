@@ -57,11 +57,19 @@ h4 {
   margin-top: 0.6rem;
 }
 
-.score {
+.scoreRound {
   font-size: 2rem;
   color: white;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.scoreGlobal {
+  position: relative;
+  font-size: 4.5rem;
+  color: rgb(245, 96, 96);
+  top: 33%;
+  text-align: center;
 }
 
 /* Middle elements */
@@ -82,4 +90,15 @@ h2 {
 
 .rollDice {
   top: 66%;
+}
+
+.dice {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-color: white;
+  top: 31%;
+  left: 45%;
+  z-index: 1;
+  box-shadow: 0px 0px 20px rgb(223, 223, 223);
 }
