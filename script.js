@@ -3,6 +3,8 @@
 // Select elements
 const score0El = document.querySelector('#score--0');
 const score1El = document.querySelector('#score--1');
+const current0El = document.querySelector('#current--0');
+const current1El = document.querySelector('#current--1');
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
@@ -13,14 +15,23 @@ score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
+let currentScore = 0;
+
 // Roll dice
 btnRoll.addEventListener('click', function () {
-  // 1 Random dice roll
-  const dice = Math.trunc(Math.random() * 6);
+  // - Random dice roll
+  const dice = Math.trunc(Math.random() * 6) + 1;
 
-  // 2 Display dice picture
+  // - Display dice picture
   diceEl.classList.remove('hidden');
   diceEl.src = `Images/dice-${dice}.png`;
 
-  // 3 If roll 1 : change player
+  // - If roll 1 : change player
+  if (dice !== 1) {
+    // Add to score
+    currentScore += dice;
+    current0El.textContent = currentScore;
+  } else {
+    // Switch user
+  }
 });
