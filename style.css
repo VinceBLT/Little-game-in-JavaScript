@@ -47,30 +47,31 @@ h4 {
   text-align: center;
 }
 
-.block {
+.current {
   width: 6.2rem;
   height: 4.5rem;
   background-color: rgb(255, 0, 34);
   position: absolute;
   top: 70%;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.current {
+.current-label {
   text-align: center;
   font-size: 0.8rem;
   margin-top: 0.6rem;
 }
 
 /* Scores */
-.scoreRound {
+.current-score {
   font-size: 2rem;
   color: white;
   text-align: center;
   margin-top: 0.5rem;
 }
 
-.scoreGlobal {
+.score {
   position: relative;
   font-size: 4.5rem;
   color: rgb(245, 96, 96);
