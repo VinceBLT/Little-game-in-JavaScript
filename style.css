@@ -8,8 +8,14 @@ h4 {
   font-family: 'Lato', sans-serif;
 }
 
-/* Split screen */
-.container {
+/* Main */
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -17,6 +23,9 @@ h4 {
 
 .left {
   left: 0;
+}
+
+.player--active {
   background-color: rgb(245, 245, 245);
 }
 
@@ -26,16 +35,16 @@ h4 {
 }
 
 /* Elements */
+#name--1 {
+  color: rgb(160, 160, 160);
+}
+
 .players {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.player2 {
-  color: rgb(160, 160, 160);
 }
 
 .block {
@@ -87,9 +96,10 @@ h4 {
 }
 
 /* Middle elements */
-button {
+.btn {
   position: absolute;
-  left: 47%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 1.3rem;
   z-index: 1;
   border: 0px;
@@ -98,16 +108,16 @@ button {
   text-align: center;
 }
 
-.newGame {
+.btn--new {
   top: 10%;
   margin-left: -20px;
 }
 
-.hold {
+.btn--hold {
   top: 76%;
 }
 
-.rollDice {
+.btn--roll {
   top: 66%;
   margin-left: -20px;
 }
@@ -118,7 +128,8 @@ button {
   height: 6rem;
   background-color: white;
   top: 31%;
-  left: 47.5%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   box-shadow: 0px 0px 20px rgb(223, 223, 223);
 }

@@ -10,49 +10,51 @@
   <body>
     <!-- LEFT BLOCK -->
     <div class="row">
-      <div class="col col-50 container left">
+      <div class="col col-50 left player player--0 player--active">
         <div class="players">
-          <h1 class="player1">
+          <h1 id="name--0">
             PLAYER 1
             <div class="dot1"></div>
           </h1>
         </div>
-        <div class="scoreGlobal 1">0</div>
+        <div class="scoreGlobal 1 id" id="score--0">0</div>
         <div class="block 1">
           <div class="current">CURRENT</div>
-          <div class="scoreRound 1">0</div>
+          <div class="scoreRound 1" id="current--0">0</div>
         </div>
       </div>
     </div>
 
     <!-- RIGHT BLOCK -->
     <div class="row">
-      <div class="col col-50 container right">
+      <div class="col col-50 right player player--1">
         <div class="players">
-          <h1 class="player2">
+          <h1 id="name--1">
             PLAYER 2
             <div class="dot2"></div>
           </h1>
         </div>
-        <div class="scoreGlobal 2">0</div>
+        <div class="scoreGlobal 2" id="score--1">0</div>
         <div class="block 2">
           <div class="current">CURRENT</div>
-          <div class="scoreRound 2">0</div>
+          <div class="scoreRound 2" id="current--1">0</div>
         </div>
       </div>
     </div>
 
     <!-- MIDDLE -->
     <div class="middle">
-      <button class="newGame">
+      <button class="btn btn--new">
         <ion-icon color="danger" name="add-circle-outline"></ion-icon>
         NEW GAME
       </button>
-      <div class="dice"></div>
-      <button class="rollDice">
+      <!-- DICE -->
+      <img src="Images/dice-5.png" alt="Playing dice" class="dice" />
+      <!-- DICE -->
+      <button class="btn btn--roll">
         <ion-icon name="reload-outline"></ion-icon> ROLL DICE
       </button>
-      <button class="hold">
+      <button class="btn btn--hold">
         <ion-icon name="download-outline"></ion-icon> HOLD
       </button>
     </div>
