@@ -63,10 +63,10 @@ btnRoll.addEventListener('click', function () {
 btnHold.addEventListener('click', function () {
   // Add current to player's score
   scores[activePlayer] += currentScore;
-  document.querySelector(`current--${activePlayer}`).textContent =
+  document.querySelector(`#score--${activePlayer}`).textContent =
     scores[activePlayer];
   // Check if score is >= 100
 
-  // Switch next player
+  // Switch player
   switchPlayer();
 });
