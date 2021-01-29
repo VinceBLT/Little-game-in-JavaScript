@@ -16,6 +16,7 @@ score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
 let currentScore = 0;
+let activePlayer = 0;
 
 // Roll dice
 btnRoll.addEventListener('click', function () {
@@ -26,12 +27,15 @@ btnRoll.addEventListener('click', function () {
   diceEl.classList.remove('hidden');
   diceEl.src = `Images/dice-${dice}.png`;
 
-  // - If roll 1 : change player
+  // - Add score and if dice = 1 => change player
   if (dice !== 1) {
     // Add to score
     currentScore += dice;
-    current0El.textContent = currentScore;
+    document.querySelector(
+      `#current--${activePlayer}`
+    ).textContent = currentScore;
   } else {
     // Switch user
+    activePlayer = activePlayer === 0 ? 1 : 0;
   }
 });
