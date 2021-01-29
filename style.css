@@ -138,3 +138,8 @@ h4 {
 ion-icon {
   color: rgb(245, 96, 96);
 }
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
