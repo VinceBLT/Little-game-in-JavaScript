@@ -64,21 +64,23 @@ btnRoll.addEventListener('click', function () {
 
 // Hold score
 btnHold.addEventListener('click', function () {
-  // Add current to player's score
-  scores[activePlayer] += currentScore;
-  document.querySelector(`#score--${activePlayer}`).textContent =
-    scores[activePlayer];
-  // Check if score is >= 100
-  if (scores[activePlayer] > 100) {
-    // Finish game
-    playing = false;
-    document
-      .querySelector(`.player--${activePlayer}`)
-      .classList.add('player--winner');
-    document
-      .querySelector(`.player--${activePlayer}`)
-      .classList.remove('player--active');
+  if (playing) {
+    // Add current to player's score
+    scores[activePlayer] += currentScore;
+    document.querySelector(`#score--${activePlayer}`).textContent =
+      scores[activePlayer];
+    // Check if score is >= 100
+    if (scores[activePlayer] > 10) {
+      // Finish game
+      playing = false;
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add('player--winner');
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove('player--active');
+    }
+    // Switch player
+    switchPlayer();
   }
-  // Switch player
-  switchPlayer();
 });
