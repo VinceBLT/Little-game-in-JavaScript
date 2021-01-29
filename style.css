@@ -35,7 +35,7 @@ h4 {
 }
 
 /* Elements */
-#name--1 {
+.name--inactive {
   color: rgb(160, 160, 160);
 }
 
