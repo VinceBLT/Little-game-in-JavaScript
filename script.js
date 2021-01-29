@@ -21,7 +21,7 @@ score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
-const scores = [0, 0];
+let scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
@@ -76,11 +76,23 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.remove('player--active');
+      document;
+      //.querySelector(`.player--${activePlayer}`)
+      //.classList.remove('player--active');
     }
+
     // Switch player
     switchPlayer();
   }
+});
+
+// New game
+btnNew.addEventListener('click', function () {
+  playing = true;
+  scores = [0, 0];
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+  diceEl.classList.add('hidden');
 });
