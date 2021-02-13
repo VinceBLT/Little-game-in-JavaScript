@@ -1,4 +1,4 @@
-# Pig-game-in-JavaScript
+# Game-in-JavaScript
 
 This is a simple dice game made with HTML/CSS and JavaScript
 
