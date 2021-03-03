@@ -1,10 +1,10 @@
 # Game-in-JavaScript
 
-This is a simple dice game made with HTML/CSS and JavaScript
+🎲 This is a simple and clean dice game made with HTML/CSS and JavaScript
 
 
 
-Rules : 
+🃏 Rules : 
 
 Player throws a dice and scores as many points as the total shown on the dice providing the dice doesn’t roll a 1. 
 The player may continue rolling and accumulating points (but risk rolling a 1) or end his turn.
